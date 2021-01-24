@@ -91,7 +91,6 @@ $result=$db->view_newest();
       
               <div class="invisible"><p><strong>Jaunākā pasaka sākas tā: </strong><div class="fragments"><?php echo $data['content'] ?>
               </div><a class="links" href="../content/read.php?R_ID=<?php echo $data['ID'] ?>">Lasīt tālāk</a></p></div>
-              
               <?php
 		        }
         ?>    
