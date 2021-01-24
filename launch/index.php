@@ -119,32 +119,15 @@ $result=$db->view_newest();
 <a href="../tema/temaread.php?R_category=Sat[R]aucošās" class="accordion-toggle" id="accordion-toggle">SatRaucošās</a>
 <a href="../tema/temaread.php?R_category=Sat[R]aucošās" class="accordion-toggle" id="accordion-togglem">Satraucošās pasakas.</a>
 
-<!-- <a href="../tema/temaread.php?R_category=Nopietnās" class="accordion-toggle" id="accordion-toggle">No<span>p</span>ietnās</a>
-<a href="../tema/temaread.php?R_category=Nopietnās" class="accordion-toggle" id="accordion-togglem">Nopietnās pasakas.</a> -->
-
 <a href="../tema/temaread.php?R_category=Nenopietnas" class="accordion-toggle" id="accordion-toggle">ne<span1>n</span1>opietnās</a>
 <a href="../tema/temaread.php?R_category=Nenopietnas" class="accordion-toggle" id="accordion-togglem">neNopietnās pasakas.</a>
-
-<!-- <a href="../tema/temaread.php?R_category=Romantiskās" class="accordion-toggle" id="accordion-toggle">Romantiskās</a>
-<a href="../tema/temaread.php?R_category=Romantiskās" class="accordion-toggle" id="accordion-togglem">Romantiskās pasakas.</a> -->
-
-<!-- <a href="../tema/temaread.php?R_category=Aktuālas" class="accordion-toggle" id="accordion-toggle">aktuālās</a>
-<a href="../tema/temaread.php?R_category=Aktuālas" class="accordion-toggle" id="accordion-togglem">Aktuālās pasakas.</a> -->
-                
-<!-- <a href="../tema/temaread.php?R_category=Īsās" class="accordion-toggle" id="accordion-toggle">pavisamĪsās</a>
-<a href="../tema/temaread.php?R_category=isās" class="accordion-toggle" id="accordion-togglem">pavisamĪsās pasakas.</a> -->
 
 <a href="../tema/temaread.php?R_category=Nesaprotamas" class="accordion-toggle" id="accordion-toggle">neSAPROTAMāS</a>
 <a href="../tema/temaread.php?R_category=Nesaprotamas" class="accordion-toggle" id="accordion-togglem">Nesaprotamās pasakas.</a>
 
-<!-- <a href="../tema/temaread.php?R_category=Garās" class="accordion-toggle" id="accordion-toggle">Garās</a>
-<a href="../tema/temaread.php?R_category=Garās" class="accordion-toggle" id="accordion-togglem">Garās pasakas.</a> -->
-
 <a href="../tema/temaread.php?R_category=Pamācošās" class="accordion-toggle" id="accordion-toggle">Prātīgās</a>
 <a href="../tema/temaread.php?R_category=Pamācošās" class="accordion-toggle" id="accordion-togglem">Prātīgās pasakas.</a>
 
-<!-- <a href="../tema/temaread.php?R_category=Reliģiskās" class="accordion-toggle" id="accordion-toggle">Radītājs</a>
-<a href="../tema/temaread.php?R_category=Reliģiskās" class="accordion-toggle" id="accordion-togglem">Dievs un pasakas.</a> -->
 </div>
 
  <div class="footer"> <a href="#" 
