@@ -63,8 +63,6 @@ $result=$db->view_newest();
              <div onClick="hide('popDiv2')" class="popupCloseButton">&times;<a href="#" onClick="hide('popDiv2')"></a></div>
               </div>
 </div>
-
-
     <div class="img">
         <p class="imgtx">Vārdus nevajag daudz, vajag īstos. Tāpēc Īsas pasakas par svarīgo. </p>
     </div>
