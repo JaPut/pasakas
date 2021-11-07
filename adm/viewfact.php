@@ -7,10 +7,10 @@ if(!isset($_SESSION['UserData']['Username'])){
 ?>
 <?php 
     require_once('../config/database.php'); 
-    require_once('../class/class.php'); 
-    $db = new operations();
+    require_once('../class/realclass.php'); 
+    $db = new real();
    
-    $result3=$db->adview_record3();
+    $result3=$db->view_facts();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,22 +26,19 @@ if(!isset($_SESSION['UserData']['Username'])){
 
                         <table class="table table-bordered">
                             <tr>
-                                <td style="width: 2%"> ID </td>
-                                <td style="width: 9%"> Sūtītājs </td>
-                                <td> Ziņa </td>
+                               
+                                <td style="width: 7%"> ID </td>
+                                <td> Fakts </td>
                             </tr>
                             <tr>
                                 <?php 
                                     while($data = mysqli_fetch_assoc($result3))
                                     {
                                 ?>
-                                   
-                          
                     <td><div class="tdh"><?php echo $data['id'] ?></div></td>
-                    <td><div class="tdh"><?php echo $data['zinnesis'] ?></div></td>
-                    <td><div class="tdh"><?php echo $data['zinaa'] ?></div></td>
-                    <td><div class="tdh"><a href="edit3.php?U_ID=<?php echo $data['id'] ?>">Edit</a></div></td>
-                    <td><div class="tdh"><a href="del.php?D_ID3=<?php echo $data['id'] ?>">Del</a></div></td>
+                    <td><div class="tdh"><?php echo $data['facts'] ?></div></td>
+                    <td><div class="tdh"><a href="editfacts.php?U_ID=<?php echo $data['id'] ?>">Edit</a></div></td>
+                    <td><div class="tdh"><a href="del.php?D_ID8=<?php echo $data['id'] ?>">Del</a></div></td>
                             
                                 </tr>
                             <?php
@@ -53,6 +50,6 @@ if(!isset($_SESSION['UserData']['Username'])){
                         <form> <button type="submit" formaction="indexadm.php">index</button>     </form>  
 <br>
                         
-                        <a href="logout.php">Click here</a> to Logout.      
+                        <a href="logout.php">Click here</a> to Logout.    
 </body>
 </html>

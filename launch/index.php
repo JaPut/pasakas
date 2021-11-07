@@ -32,7 +32,10 @@ $result=$db->view_newest();
 
     <div id="popDiv" class="ontop">
         <div id="popupb">
-        <div class="poptextb"><p>NEKAS NAV V<span1>i</span1>ENKĀRŠI TĀPAT</p></div>
+        <div class="poptextb">
+          <p>Uzmanību!!! Realitāte dažreiz mēdz būt reāli nepatīkama, reizēm neskaidra. Ieteikums palikt PasakāS.</p><br>
+          <div class="realty"><p>Nospiežot šo apliecinu, ka apzināti atgriežos realitātē.</p></div>
+        </div>
         <div onClick="hide('popDiv')" class="popupCloseButton">&times;<a href="#" onClick="hide('popDiv')"></a></div>
         </div>
         </div>
@@ -66,6 +69,9 @@ $result=$db->view_newest();
     <div class="img">
         <p class="imgtx">Vārdus nevajag daudz, vajag īstos. Tāpēc Īsas pasakas par svarīgo. </p>
     </div>
+    <div class="avoid">
+        <p class="imgav">To avoid criticism</p>
+    </div>
 
         <div class="reference">
               <p><strong>Kāpēc pasakas - </strong>
@@ -95,11 +101,11 @@ $result=$db->view_newest();
               </div>
             <div class="reference3">
               <a href="#" onClick="pop('popDiv')">
-                <div class="svarigi">KAS IR svarīgi</div></a>
+                <div class="svarigi">Realitāte</div></a>
             </div>  
             <div class="reference4">
               <a href="#" onClick="pop('popDiv1')">
-                <div class="svarigi">vinakārši tāpat</div></a>
+                <div class="svarigi">vienkārši tāpat</div></a>
             </div>
             <div class="reference5">
               <a href="#" onClick="pop('popDiv2')">
@@ -128,8 +134,8 @@ $result=$db->view_newest();
 
 </div>
 
- <div class="footer"> <a href="#" 
-               style="text-decoration: underline; color: #000;">Īstenība___ </a>
+ <div class="footer"> <a href="../real/index.php"
+               style="text-decoration: underline; color: #000;">Realitāte__ir__šeit </a>
                &copy JP 2020  <a href="../adm/zina.php" 
                style="text-decoration: underline; color: #000;">_mindOfSpace_sAziņai___ </a>
           </div>   

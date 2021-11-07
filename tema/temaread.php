@@ -45,8 +45,7 @@
           <div class="space">
               <br>
           </div>
-          
-           <!-- <a class="links" href="../content/read.php?R_ID=<?php echo $data['ID'] ?>">Lasīt</a> -->
+        
           <div class="space">
               <br>
           </div>

@@ -1,6 +1,6 @@
 <?php
-
 require_once('../class/class.php');
+require_once('../class/realclass.php');
 
     class database
     {

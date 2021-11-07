@@ -6,7 +6,7 @@ if(!isset($_SESSION['UserData']['Username'])){
 }
 ?>
 <?php 
-    require_once('../config/database.php'); 
+    require_once('../config/database.php');
     require_once('../class/class.php'); 
     $db = new operations();
     
@@ -43,7 +43,7 @@ if(!isset($_SESSION['UserData']['Username'])){
                     <td><div class="tdh"><?php echo $data['name'] ?></div></td>
                     <td><div class="tdh"><?php echo $data['comm_text'] ?></div></td>
                     <td><div class="tdh"><a href="edit2.php?U_ID=<?php echo $data['id'] ?>">Edit</a></div></td>
-                    <td><div class="tdh"><a href="del2.php?D_ID2=<?php echo $data['id'] ?>">Del</a></div></td>
+                    <td><div class="tdh"><a href="del.php?D_ID2=<?php echo $data['id'] ?>">Del</a></div></td>
                            
                                 </tr>
                             <?php

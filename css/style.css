@@ -43,9 +43,53 @@ a:hover{
     border-top-right-radius: 15% 26%;
 }
 
+.avoid {  
+    position: absolute;
+    left: 52%;
+    top: 19vh;
+    height: 3vh;
+    width: auto;
+    background: none;
+    z-index: 1;
+    /* padding: 7px; */
+    text-align: center;   
+}
+
 .imgtx {
   font-size: 2.7vh;
   color: #3FB0AC;
+
+}
+
+.imgav {
+  color: #362058;
+  font-family: 'Trocchi', serif;
+  font-size: 2.7vh;
+  font-weight: 100;
+  margin: 0;
+  opacity: 30%;
+  font-family: Georgia, serif;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-variant: small-caps;
+  text-shadow: 0 1px 0 #ccc,
+  0 2px 0 #c9c9c9,
+  0 3px 0 #bbb,
+  0 4px 0 #b9b9b9,
+  0 5px 0 #aaa,
+  0 6px 1px rgba(0,0,0,.1),
+  0 0 5px rgba(0,0,0,.1),
+  0 1px 3px rgba(0,0,0,.3),
+  0 3px 5px rgba(0,0,0,.2),
+  0 5px 10px rgba(0,0,0,.25),
+  0 10px 10px rgba(0,0,0,.2),
+  0 20px 20px rgba(0,0,0,.15);
+  transform: rotate(-1.5deg);
+}
+
+.imgav:hover {
+  opacity: 45%;
+  transform: rotate(-0.5deg);
 }
 
 .img:hover {
@@ -75,17 +119,11 @@ a:hover{
   color:#ffe19f; 
   text-shadow: 0 0 5px #fff, 
                0 0 1px #fff,  
-               /* 0 0 20px rgb(238, 213, 99),  
-               0 0 30px rgb(238, 213, 99),  
-               0 0 40px rgb(238, 213, 99),  
-               0 0 55px rgb(238, 213, 99),   */
                0 0 60px rgb(238, 213, 99); 
 } 
 
 @keyframes blinkingText{
   0%{     color: rgb(248, 156, 17);    }
-  /* 49%{    color: rgb(192, 245, 47); }
-  60%{    color: transparent; } */
   99%{    color:transparent;  }
   100%{   color: rgb(190, 164, 12);    }
 }
@@ -185,10 +223,10 @@ transform: scaleX(1.05);
 position: relative;
 left: 1px;
 top:35px;
-width: 110%;
+width: auto;
 color:rgb(255, 4, 4);
 background: linear-gradient(rgb(245, 241, 241), rgb(236, 197, 197));
-opacity: 0.5;
+/* opacity: 0.5; */
 border-radius: 100px;
 font-size: 1vw;
 font-weight: 700;
@@ -335,21 +373,36 @@ z-index: 10;
   border-top-left-radius: 100px 100px;
   border-bottom-left-radius: 190px 100px;
   padding: 3px;
-  
-  
-
 }
+
 .poptextb {
   top:10%;
   position: relative;
-  font-size: 10vw;
+  font-size: 4vw;
   vertical-align: text-bottom;
   text-align: center;
-  /* padding: 10%; */
   filter: contrast(150%) drop-shadow(8px 8px 10px gray);
   transform: rotate(-2deg);
-  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  /* text-shadow: 2px 2px 5px rgb(0, 0, 0); */
+  text-shadow:   0 0 3px #000000,   /* Many shadows blur out the area around the text */
+                               3px 0 3px #000000,
+                               0 3px 3px #000000,
+                               -3px 0 3px #000000,
+                               0 -3px 3px #000000;
+}
 
+.realty {
+  font-size: 3vw;
+  color: rgb(128, 0, 53);
+  transform: rotate(1.5deg);
+  background-color: rgb(170, 159, 159);
+  width:90%;
+  height: auto;
+  border-radius: 80%;
+  padding: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
 .poptext {

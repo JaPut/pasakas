@@ -133,13 +133,6 @@
             }
         }
 
-
-
-
-	 
-
-
-
 	 // View Database Record
 	 public function adview_record()
 	 {
@@ -162,6 +155,7 @@
 		 $result = mysqli_query($db->conn,$query);
 		 return $result;
 	 }
+	 
 	 public function adview_record3()
 	 {
 		 global $db;
@@ -176,10 +170,8 @@
 	 public function view_record()
 	 {
 		 global $db;
-		//  require_once('./storiescomments.php');
 		 global $xxx;
 		 $query = "select * from table1 where id='$xxx'";
-		//  $query = "select * from table1";
 		 $result = mysqli_query($db->conn,$query);
 		 return $result;
 	 }
@@ -341,7 +333,7 @@
 			 if($this->update_record33($ID,$zinnesis,$zinaa))
 			 {
 				 $this->set_messsage('<div> Your Record Has Been Updated : )</div>');
-				 header("location:view.php");
+				 header("location:viewzina.php");
 			 }
 			 else
 			 {   
@@ -431,6 +423,76 @@
 	 {
 		 global $db;
 		 $query = "delete from zinas where ID='$id'";
+		 $result = mysqli_query($db->conn,$query);
+		 if($result)
+		 {
+			 return true;
+		 }
+		 else
+		 {
+			 return false;
+		 }
+	 }
+	 public function Delete_Record4($id)
+	 {
+		 global $db;
+		 $query = "delete from vajres where ID='$id'";
+		 $result = mysqli_query($db->conn,$query);
+		 if($result)
+		 {
+			 return true;
+		 }
+		 else
+		 {
+			 return false;
+		 }
+	 }
+	 public function Delete_Record5($id)
+	 {
+		 global $db;
+		 $query = "delete from realcomments where ID='$id'";
+		 $result = mysqli_query($db->conn,$query);
+		 if($result)
+		 {
+			 return true;
+		 }
+		 else
+		 {
+			 return false;
+		 }
+	 }
+	 public function Delete_Record6($id)
+	 {
+		 global $db;
+		 $query = "delete from que where ID='$id'";
+		 $result = mysqli_query($db->conn,$query);
+		 if($result)
+		 {
+			 return true;
+		 }
+		 else
+		 {
+			 return false;
+		 }
+	 }
+	 public function Delete_Record7($id)
+	 {
+		 global $db;
+		 $query = "delete from quecomments where ID='$id'";
+		 $result = mysqli_query($db->conn,$query);
+		 if($result)
+		 {
+			 return true;
+		 }
+		 else
+		 {
+			 return false;
+		 }
+	 }
+	 public function Delete_Record8($id)
+	 {
+		 global $db;
+		 $query = "delete from facts where ID='$id'";
 		 $result = mysqli_query($db->conn,$query);
 		 if($result)
 		 {
